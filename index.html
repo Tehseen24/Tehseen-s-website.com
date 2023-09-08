@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehseen's website |Tehseen.com</title>
+    <link rel="stylesheet" href="css/Style.CSS">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="css/phone.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            position: sticky;
+            margin: -9px -13px;
+            top: 0;
+        }
+        #logo{
+            margin: 3px 5px;
+        }
+        #logo img{
+            margin: 3px 5px;
+            height: 65px;
+        }
+         #navbar ul{
+            display: flex;
+            font-family: 'Baloo Bhai',cursive ;
+        }
+        #navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        #navbar ul li{
+        
+            list-style: none;
+            font-size: 1.5rem;
+        }
+        #navbar ul li a{
+            color: white;
+            display: block;
+            padding: 12px 23px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        #navbar ul li a:hover{
+            color: black;
+            background-color: white;
+        }
+        #home{
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 560px;
+            justify-content: center;
+            align-items: center;
+        }
+        #home::before{
+            content: "";
+            background:url('planet-3508677.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 60%;
+            width: 100%;
+            margin-top: -380px;
+            z-index: -1;
+            opacity: 1;
+
+        }
+        #home h1{
+            margin-top: -250px;
+            font-size: 2.5rem;
+            color: white;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+        }
+        #home p{
+            color: white;
+            text-align: center;
+            font-size: 1rem;
+            font-family: 'Bree Serif', serif;
+        }
+        #h-primary{
+            font-size: 2.5rem;
+            padding: 12px;
+            margin: 100px;
+        }
+        .h-secondary{
+            font-size: 2.5;
+            padding: 2px 12px
+        };
+        .h-secondary{
+            font-size: 1.5rem;
+            font-family:'Bree Serif',serif;
+        }
+        .tehseen{
+            margin-top: -275px;
+            font-size: 1.5rem;
+        }
+        .btn{
+            padding: 6px 20px;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgb(255, 227, 227);
+            margin: 16px;
+            font-size: 1rem;
+            border-radius: 9px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            
+            
+        }
+        .center{
+            text-align: center;
+            margin: -64px;
+        }
+        #programms{
+            margin: 13px;
+            display: flex; 
+            padding: 80px 55px;
+            
+        }
+        #programms .box{
+            border: 3px solid rgb(5, 5, 5);
+            border-radius: 30px;
+            width: 340px;
+            height: 350px;
+            margin-top: 5px;
+            padding: 50px;
+            margin: 3px 6px;
+            background: rgb(248, 239, 239);
+        }
+        .box{
+            margin: 10px 5px;
+        }
+        #programms .box h2{
+            margin: 3px;
+        }
+        #programms .box p{
+            margin: 20px;
+            font-size: 1.3rem;
+            text-align: center;
+            
+        }
+        #programms .box img{
+            height: 114px;
+            margin: 40px;
+            display: auto;
+            align-items: center;
+    
+        }
+        .h-k{
+        text-align: center;
+        font-size: 2.5rem;
+        color: black;
+        height: -80px;
+        }
+    
+        .khan-g{
+            position: relative;
+            text-align: center;
+            font-size: 1.7rem;
+            margin-top:-75px;
+            height: -100px;
+        }
+        #client-section::before{
+            content: "";
+            position: absolute;
+             /* background: url('images (2).jpg') no-repeat center center/cover;   */
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.89;
+            margin-top: 200px;
+        }
+        
+        #client{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #client-item{
+            padding: 16px;
+            height: 60px;
+
+        }
+        #contact{
+            position: relative;
+        }
+        #contact::before{
+            content: "";
+            position: absolute;
+            width:100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url('contact-us-4193523.jpg') no-repeat center center/cover;
+            margin: -5px;
+    
+        }
+        .h-11{
+            text-align: center;
+            height: 100px;
+            font-size: 2.6rem;
+            margin-top: -45px;
+            
+        }
+        #footer{
+            background: black;
+            color: white;
+            height: 10px;
+            
+        }
+        .o{
+            text-align: center;
+            background: black;
+            color: white;
+            padding: 40px -150px;
+            
+        
+            
+        }
+        #contact-box{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            padding-bottom: 34px;
+        }
+        #contact-box input,
+        #contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 10px;
+            font-size: 1.1rem;
+        }
+        #contact-box form{
+            width: 44%;
+        }
+        #contact-box label{
+            font-size: 1.5rem;
+            font-family: 'Bree Serif',serif;
+        }
+        .btn{
+            text-align: center;
+            cursor: pointer;
+            
+        }
+         
+        
+        
+        
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="download (3).jpg" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#programms">Programs</a></li>
+            <li class="item"><a href="#client">About us</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+        </ul>
+    
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to Tehseen's website</h1>
+        <p>Here i provide free programs of C,C++,Web development,Creating of Youtube channel and other relative programms.</p>
+        <p>These are free of cast in all over the Pakistan.Only contact us and we share with you.Support us.</p>
+        <button class="btn"><a href="#contact">Contact us Now</a></button>
+    </section> 
+
+
+    <section id="programms container">
+        <div class="tehseen">
+        <h1 class="h-primary center">Our Programs</h1>
+        </div>
+        <div id="programms">
+            <div class="box">
+                <img src="images.png" alt="">
+                <h2 class="h-secondary center">Web development</h2>
+               <p class="ok">These are Web development cources.All is free available for Pakistani.In Web deelopment cources you learn about HTML,CSS and Java Script. </p>
+            </div>
+            <div class="box">
+                <img src="download (2).png" alt="">
+                <h2 class="h-secondary center">C,C++</h2>
+               <p class="ok">Here we learn about of programming .In this programming we learn and read C, C++ language. </p>
+            </div> 
+            <div class="box">
+                <img src="images (1).png" alt="">
+                <h2 class="h-secondary center">Youtube channel creating</h2>
+               <p class="ok">Creating of YouTube channel.Monotaization. And others tips of viral to your channel. </p>
+            </div> 
+        </div>
+    </section>
+    
+
+<section id="client-section">
+
+ <div class="khan-g">
+ <h1>Support Us</h1>
+ </div>
+<div id="client">
+ <div class="client-item">
+ <img src="download.png" alt="Our Client">
+ </div>
+ <div class="client-item">
+    <img src="download (1).png" alt="Our Client">
+    </div>
+    <div class="client-item">
+        <img src="microsoft-vector-logo-small.png" alt="Our Client">
+        </div>
+ </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-11">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email: </label>
+                    <input type="email" name="email" id="name" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="">Phone Number: </label>
+                    <input type="phone number" name="phone" id="name" placeholder="Enter Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button class="btn">Submit Now</button>
+    
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <footer>
+        <div class="o">
+Copyright &copy; www.Tehseen's website.com. All right reserved|Design by:Tehseen Baloch.
+        </div>
+    </footer>
+</body>
+</html>
